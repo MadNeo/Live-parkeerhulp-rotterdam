@@ -93,11 +93,11 @@ Maak een rustige, verzorgde website die zowel op desktop als mobiel prettig werk
 - Gebroken witte achtergrond, donkergroene tekst en lichtgroene accenten.
 - Typografie met Manrope voor koppen en DM Sans voor tekst, met bruikbare systeemfont-fallbacks.
 - Compact P-logo met richtingpijl en de naam ‘parkeerwijzer ROTTERDAM’.
-- Introductie: **‘Een plek in de stad. In één oogopslag.’**
+- Korte kop **‘Vrije parkeerplaatsen’** met compacte bestemmingslink. Geen groot introductieblok; de tellingen moeten direct zichtbaar zijn.
 - Bestemmingsblok voor Delftseplein 17.
 - Donkergroene samenvattingsbalk met goed leesbare cijfers.
-- Witte locatiekaarten met subtiele randen, afgeronde hoeken en veel witruimte.
-- Responsief raster: één kolom op mobiel, twee op middelgrote schermen en drie of vier op brede schermen.
+- Witte locatiekaarten met subtiele randen, afgeronde hoeken en beperkte tussenruimte, zonder de leesbaarheid te verliezen.
+- Responsief raster: één kolom op mobiel, twee op middelgrote schermen en drie op kleinere desktops en vijf vanaf 1280 px. Toon standaard de vijf livekoppelingen eerst.
 - Duidelijke focusstijlen, gelabelde bediening en tekstuele status naast kleuren. Meters moeten ook zonder kleur begrijpelijk zijn.
 - Geen decoratieve foto's nodig; de tellingen en meters staan centraal.
 
@@ -110,3 +110,8 @@ Doelrepository: https://github.com/MadNeo/Live-parkeerhulp-rotterdam
 Voeg `.nojekyll` en een Nederlandstalige `README.md` toe. Documenteer GitHub Pages: Deploy from a branch → main → / (root). Publiceer alleen projectbestanden; geen credentials of lokale configuratie.
 
 Controleer voor oplevering de mapping van de vijf livebronnen, nulwaarden, ontbrekende capaciteit, ongeldige tellingen, foutafhandeling, zoeken, sorteren, filters en mobiele weergave. Meld eerlijk welke controles niet konden worden uitgevoerd. Behoud bij wijzigingen bestaande functionaliteit en documenteer nieuwe bronbeperkingen.
+
+
+## Aanvulling: tekens en compacte weergave
+
+Bewaar tekst zonder verlies van tekens. Gebruik voor pictogrammen SVG of HTML-entiteiten en controleer op vervangtekens (U+FFFD) en ongewenste vraagtekens in labels. Gebruik geen onbedoelde systeemencoding bij het lezen of uploaden. Houd de bovenkant compact: navigatie circa 64 px, korte titelstrook en een compacte samenvatting. De vijf livekaarten horen op een breed desktopscherm direct in beeld te komen.
