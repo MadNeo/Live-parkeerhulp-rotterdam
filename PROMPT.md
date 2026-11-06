@@ -90,12 +90,12 @@ Toon statische capaciteit als statisch, met bronvermelding. Houd ontbrekende geg
 
 Maak een rustige, verzorgde website die zowel op desktop als mobiel prettig werkt:
 
-- Gebroken witte achtergrond, donkergroene tekst en lichtgroene accenten.
+- Goedgekeurde MKW-huisstijl: oranje #E57022, blauw #0D5EBA en antraciet #303030, met witte kaarten en een lichtgrijze achtergrond.
 - Typografie met Manrope voor koppen en DM Sans voor tekst, met bruikbare systeemfont-fallbacks.
-- Compact P-logo met richtingpijl en de naam ‘parkeerwijzer ROTTERDAM’.
+- Links boven het originele oranje MKW Groep-logo (cirkel met MKW en het woord GROEP), gevolgd door een scheidingslijn en de naam ‘parkeerwijzer ROTTERDAM’. Behoud verhoudingen en originele logokleur; gebruik nooit het blauwe logo uit de eerste visualisatie.
 - Korte kop **‘Vrije parkeerplaatsen’** met compacte bestemmingslink. Geen groot introductieblok; de tellingen moeten direct zichtbaar zijn.
 - Bestemmingsblok voor Delftseplein 17.
-- Donkergroene samenvattingsbalk met goed leesbare cijfers.
+- Antracietkleurige compacte samenvattingsbalk met oranje cijfers en een oranje vernieuwknop.
 - Witte locatiekaarten met subtiele randen, afgeronde hoeken en beperkte tussenruimte, zonder de leesbaarheid te verliezen.
 - Responsief raster: één kolom op mobiel, twee op middelgrote schermen en drie op kleinere desktops en vijf vanaf 1280 px. Toon standaard de vijf livekoppelingen eerst.
 - Duidelijke focusstijlen, gelabelde bediening en tekstuele status naast kleuren. Meters moeten ook zonder kleur begrijpelijk zijn.
@@ -115,3 +115,10 @@ Controleer voor oplevering de mapping van de vijf livebronnen, nulwaarden, ontbr
 ## Aanvulling: tekens en compacte weergave
 
 Bewaar tekst zonder verlies van tekens. Gebruik voor pictogrammen SVG of HTML-entiteiten en controleer op vervangtekens (U+FFFD) en ongewenste vraagtekens in labels. Gebruik geen onbedoelde systeemencoding bij het lezen of uploaden. Houd de bovenkant compact: navigatie circa 64 px, korte titelstrook en een compacte samenvatting. De vijf livekaarten horen op een breed desktopscherm direct in beeld te komen.
+
+
+## Goedgekeurde MKW-uitvoering
+
+De gebruiker heeft de oranje/blauw/antraciet visualisatie goedgekeurd. Gebruik oranje bovenranden op kaarten en blauwe categorie-labels en links. Functionele beschikbaarheidsmeters blijven groen/oranje/rood; onbekende gegevens blijven grijs. Gebruik de bestaande echte adressen, capaciteit en livekoppelingen uit de code, niet de voorbeeldteksten of aantallen uit de gegenereerde afbeelding. Toon geen conceptbanner of kleurenpalet op de livewebsite.
+
+Het passende originele oranje logo is ook beschikbaar op https://static.wixstatic.com/media/46d380_8f890dcf2daa41318fc796ff04bf3618~mv2.png en wordt in index.html ingesloten zodat het geen externe afbeeldingsaanvraag nodig heeft.
