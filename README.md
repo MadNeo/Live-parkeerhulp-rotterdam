@@ -21,7 +21,7 @@ Bron: https://kaartlaag.rotterdam.nl/api/maps/38.json
 
 Livekoppeling: P+R Meijersplein, Blijdorp, Alexander, Kralingse Zoom en Schouwburgplein I. Ontbrekende tellingen blijven onbekend; bij fouten worden eerdere tellingen niet als actueel getoond. De bron vermeldt geen meettijdstip. Ontvangsttijd is geen meettijd.
 
-De overige garages tonen beschikbare statische capaciteit en bronlinks. Q-Park Weena heeft een afgeschermde RDW-feed. Voor de andere commerciële garages is geen openbare numerieke telling gevonden.
+De overige garages tonen beschikbare statische capaciteit en bronlinks. Q-Park Weena heeft een afgeschermde RDW-feed. ParkBee Holiday Inn Express toont numerieke reserveringsbeschikbaarheid per gekozen boekingsperiode. De API ondersteunt geen rechtstreekse browseraanvraag vanaf GitHub Pages; de kaart verwijst daarom naar de ParkBee-detailpagina. Deze aantallen worden niet als fysieke livebezetting in de totalen opgenomen. Voor de overige commerciële garages is geen openbare numerieke telling gevonden.
 
 Schouwburgplein I is aangenomen bij het aangeleverde adres Schouwburgplein 2; de gemeente noemt Schouwburgplein 22. Central Plaza vermeldt bij de exploitant Kruisstraat 13 in plaats van het aangeleverde nummer 17.
 
