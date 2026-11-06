@@ -26,3 +26,9 @@ De overige garages tonen beschikbare statische capaciteit en bronlinks. Q-Park W
 Schouwburgplein I is aangenomen bij het aangeleverde adres Schouwburgplein 2; de gemeente noemt Schouwburgplein 22. Central Plaza vermeldt bij de exploitant Kruisstraat 13 in plaats van het aangeleverde nummer 17.
 
 Capaciteiten uit de livefeed kunnen afwijken van fysieke capaciteit op informatiepagina’s. Vrij en capaciteit worden voor de meters steeds uit dezelfde feed gebruikt.
+
+## Publicatie controleren
+
+Controleer na een wijziging onder **Actions** de nieuwste run van `pages build and deployment`. De publicatie is pas geslaagd als ook de stap `deploy` groen is. Een geslaagde `build` alleen betekent nog niet dat de nieuwe versie online staat.
+
+Open daarna de website en vernieuw met **Ctrl + F5** om de gepubliceerde versie te controleren. Een run met status `Queued` is nog niet gepubliceerd.
