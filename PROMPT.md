@@ -56,7 +56,7 @@ Onderzoek voor de commerciële garages de officiële website en eventuele openba
 
 | Garage | Website | Bevinding bij ontwikkeling |
 | --- | --- | --- |
-| ParkBee Holiday Inn Express | https://parkbee.com/nl/city/rotterdam/poi/holiday-inn-express-rotterdam | Geen openbare numerieke live-telling gevonden; dit is een pagina over parkeren nabij het hotel. |
+| ParkBee Holiday Inn Express | https://maps-web.parkbee.com/nl/pages/garage-details/3efdc8ac-68d2-41a6-9476-83cef44f569c | Numerieke reserveringsbeschikbaarheid per boekingsperiode gevonden. Geen directe browserkoppeling wegens ontbrekende CORS-toestemming voor GitHub Pages. |
 | Interparking Central Plaza | https://www.interparking.nl/nl/parkeren/rotterdam/central-plaza/ | Gepubliceerde capaciteit: 470; geen openbare numerieke live-telling gevonden. |
 | Q-Park Weena | https://www.q-park.nl/nl-nl/parkeren/rotterdam/weena/ | Gepubliceerde capaciteit: 480; de gevonden RDW-livefeed vereist authenticatie (HTTP 401). |
 | Interparking Kruiskade | https://www.interparking.nl/nl/parkeren/rotterdam/kruiskade/ | Gepubliceerde capaciteit: 269; geen openbare numerieke live-telling gevonden. |
@@ -122,3 +122,9 @@ Bewaar tekst zonder verlies van tekens. Gebruik voor pictogrammen SVG of HTML-en
 De gebruiker heeft de oranje/blauw/antraciet visualisatie goedgekeurd. Gebruik oranje bovenranden op kaarten en blauwe categorie-labels en links. Functionele beschikbaarheidsmeters blijven groen/oranje/rood; onbekende gegevens blijven grijs. Gebruik de bestaande echte adressen, capaciteit en livekoppelingen uit de code, niet de voorbeeldteksten of aantallen uit de gegenereerde afbeelding. Toon geen conceptbanner of kleurenpalet op de livewebsite.
 
 Het passende originele oranje logo is ook beschikbaar op https://static.wixstatic.com/media/46d380_8f890dcf2daa41318fc796ff04bf3618~mv2.png en wordt in index.html ingesloten zodat het geen externe afbeeldingsaanvraag nodig heeft.
+
+## Aanvulling: ParkBee-beschikbaarheid
+
+De detailpagina en kaart gebruiken garage-ID `3efdc8ac-68d2-41a6-9476-83cef44f569c`. De openbare GET-bron is `https://maps-api.parkbee.net/v1/garages/availability`, met parameters `GarageIds`, `BookingStart`, `BookingEnd` en `Product=prepaid`. Het antwoord bevat `items[].availableSpaces` en `currentTotalCapacity`. Bij controle voor 6 november 2026 21:00–23:00 UTC waren deze 45 en 60; dit zijn uitsluitend onderzoekswaarden, nooit vast in de website zetten als actuele telling of vaste capaciteit.
+
+Dit is reserveringsbeschikbaarheid voor de opgegeven periode, geen bevestigde telling van fysiek vrije plaatsen nu. De gecontroleerde respons met Origin https://madneo.github.io bevatte geen Access-Control-Allow-Origin. Gebruik voorlopig de directe bronlink. Een toekomstige koppeling vereist een servercomponent, expliciete periodeweergave, eigen actualiteitscontrole en scheiding van de gemeentelijke live-totalen. Geen CORS-omzeiling via onbekende publieke proxies.
